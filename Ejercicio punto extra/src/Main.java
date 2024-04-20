@@ -20,7 +20,7 @@ public class Main {
             System.out.println("El cliente " + clienteID + " ha llegado");
             synchronized (clientes[clienteID % 5]) {
                 clientes[clienteID % 5].entrar();
-                clientes[clienteID % 5].notificarBarbero(); // Notificar al barbero
+                clientes[clienteID % 5].notificarBarbero(); 
             }
             clienteID++;
         }
